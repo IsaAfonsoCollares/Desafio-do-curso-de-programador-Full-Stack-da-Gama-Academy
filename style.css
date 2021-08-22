@@ -1,0 +1,89 @@
+body{
+     background-image: url("office.jpg");   
+}
+img#logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 9%;
+    margin-top: -0.3cm;
+    vertical-align: middle;
+}
+#cab{
+    font-size: 60px;
+    font-family: sans-serif;
+    background-color: rgba(199, 202, 202, 0.781);
+    margin-top: -0.2cm;
+    margin-left: -0.2cm;
+    margin-right: -0.2cm;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white; 
+}
+h2{
+    text-align: left;
+    margin-inline-start: 1cm;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+#num{
+    width: 2cm;
+}
+#nome_completo, #email, #end, #profissao, #cargo{
+    width: 8cm;
+    margin-inline-end: 1cm;
+    color: white;
+}
+.required:after {
+    content:" *"; 
+    color: rgb(241, 58, 58);
+  }
+#form{
+    border-style: solid;
+    border: rgb(24, 24, 24);
+    background-color: rgba(8, 8, 8, 0.801);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2cm;
+    margin-top: 0.5cm;
+    width: fit-content;
+    color: white;
+}
+input#enviar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+    color: azure;
+    font-size: 30px;
+    width: 5cm;
+    height: auto;
+    background-color: rgb(84, 97, 117);
+}
+label{
+    display: inline-block;
+    font-size: 22px;
+    margin-inline-end: 1cm;
+    margin-inline-start: 1cm;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+input, select{
+    margin-inline-start: 1cm;
+    margin-inline-end: 1 cm;
+    font-size: larger;
+    background-color: rgba(204, 207, 209, 0.877);
+    color: black
+}
+#botton{
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
