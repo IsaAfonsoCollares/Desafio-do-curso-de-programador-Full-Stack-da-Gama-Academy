@@ -74,7 +74,9 @@ const pesquisarCep = async() => {
     if (cep.length>0 && cep.length<8){
         alert('Números faltando, verifique os digitos');
     }
-    if (cep.length)
+    if (cep.length>8){
+        alert('Números demais, verifique os digitos');
+    }
 }
 document.getElementById('cep').addEventListener('click', limparEnd);
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
