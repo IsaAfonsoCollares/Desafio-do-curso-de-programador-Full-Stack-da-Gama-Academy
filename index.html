@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="cab">
-        <img src="./logo_jobs.png" alt="logotipo" id="logo">
-        JobsNET - Recrutamento e Seleção
-    </div>
+    <header >
+        <nav class="menu_bar">
+            <ul>
+            <img src="./logo_jobs.png" alt="logotipo" id="logo">
+            <a href="/extras/sobre.html"><li>Quem somos</li></a>
+            <a href="./index.html"><li>Cadastro</li></a>
+            <a href="/extras/contato.html"><li>Contato</li></a>
+            </ul>
+        </nav>
+    </header>
     <div id="form">
-         <form action="">
+         <form action="submit">
         <br>
         <h1>Cadastro de Currículo</h1>
         <h2>Dados Pessoais</h2>
         <table id="dados_pessoais">
             <td>
-                <label for="id_cpf" class="required" >CPF</label><br>
-                <input type="text" name="id_cpf" id="id_cpf" placeholder="somente números" pattern="[0-9]{11}" required><br>
+                <label for="id_cpf" class="required check">CPF</label><br>
+                <input type="number" name="id_cpf" id="id_cpf" placeholder="somente números" required><br>
                 <label for="nome_completo" class="required">Nome Completo:</label><br>
                 <input type="text" id="nome_completo" name="nome_completo" placeholder="Ex: Maria da Costa Silva" required><br>
                 <label for="estado_civil">Estado Civil</label><br>
@@ -35,7 +41,7 @@
             </td>
             <td>
                 <label for="id_rg" class="required">RG</label><br>
-                <input type="text" name="id_rg" id="id_rg" placeholder="somente números" pattern="[0-9]{11}" required><br>
+                <input type="number" name="id_rg" id="id_rg" placeholder="somente números" pattern="[0-9]{11}" required><br>
                 <label for="data_nascimento" class="required">Data de Nascimento</label><br>
                 <input type="date" name="data_nascimento" id="data_nascimento" max="2021-08-29" required><br>
                 <label for="genero">Gênero</label><br>
@@ -59,8 +65,7 @@
                 <label for="bairro" class="required">Bairro</label><br>
                 <input type="text" name="bairro" id="bairro" required><br>
                 <label for="tel">Telefone Fixo</label><br>
-                <input type="tel" name="telefone_f" id="telefone_f"><br> 
-                          
+                <input type="tel" name="telefone_f" id="telefone_f"><br>    
             </td>
         <td>
                 <label for="uf">Estado</label> <br>
@@ -71,8 +76,6 @@
                 <input type="text" name="cidade" id="cidade" required> <br>
                 <label for="celular" class="required">Celular</label><br>
                 <input type="tel" name="celular" id="celular"required><br>
-
-                
         </td>
         </table>
         <h2>Informações profissionais</h2>
@@ -124,10 +127,10 @@
         <br>
     </form>
     </div>
-    <div id="botton">
-        &copy; Isabela Afonso Collares <br>
+    <footer>
+        Isabela Afonso Collares &copy; 2021 <br>
         Imagem de Free-Photos por Pixabay 
-    </div>
+    </footer>
 </body>
 <script src="./script.js" type="module" defer></script>
 </html>
