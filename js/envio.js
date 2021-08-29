@@ -38,7 +38,7 @@ const user = await fetch('https://desafio-gama-iac.herokuapp.com/register', {
         'Accept': 'application/json',
         'Content-Type':'application/json'
         },
-    body: Form()
+    body: JSON.stringify(Form())
     });
       if (user.status == 200) {
           console.log(Form())
