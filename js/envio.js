@@ -35,8 +35,7 @@ const user = await fetch('https://desafio-gama-iac.herokuapp.com/register', {
     headers: {
         'Access-Control-Allow-Origin' : '*',
         'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-        }
-    }
+        },
     body: Form()
     });
       if (user.status == 200) {
