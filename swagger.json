@@ -11,6 +11,10 @@
       {
         "url": "http://localhost:2903",
         "description": "ambiente de desenvolvimento"
+      },
+      {
+        "url": "https://desafio-gama-iac.herokuapp.com/",
+        "description": "ambiente de produção"
       }
     ],
   
