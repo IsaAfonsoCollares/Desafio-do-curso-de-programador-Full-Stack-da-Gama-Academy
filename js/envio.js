@@ -33,8 +33,6 @@ const createCandidate = async (candidato) => {
 const user = await fetch('https://desafio-gama-iac.herokuapp.com/register', {
     method: "POST",
     headers: {
-        'Access-Control-Allow-Origin' : '*',
-        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         'Accept': 'application/json',
         'Content-Type':'application/json'
         },
