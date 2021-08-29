@@ -1,7 +1,7 @@
 'use strict';
 //página principal
 //validador de cpf
-const validarCpf = () =>{
+/*const validarCpf = () =>{
     var cpfPessoa = document.getElementById('id_cpf').value;
     if (!!cpfPessoa.match(/(\d)\1{10}/)) {
         alert('CPF invalido')
@@ -44,7 +44,7 @@ const validarCpf = () =>{
     }
 }
 document.getElementById('id_cpf').addEventListener('focusout',validarCpf)
-
+*/
 //api VIA CEP
 const preencherFormulario = (endereco) => {
     document.getElementById('end').value = endereco.logradouro;

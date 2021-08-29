@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobsNET - Currículo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header >
+        <nav class="menu_bar">
+            <ul>
+            <img src="./logo_jobs.png" alt="logotipo" id="logo">
+            <a href="/extras/sobre.html"><li>Quem somos</li></a>
+            <a href="./index.html"><li>Cadastro</li></a>
+            <a href="/extras/contato.html"><li>Contato</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="form">
+        <form action="" method="POST">
+        <br>
+        <h1>Cadastro de Currículo</h1>
+        <h2>Dados Pessoais</h2>
+        <table id="dados_pessoais">
+            <td>
+                <label for="id_cpf" class="required check">CPF</label><br>
+                <input type="number" name="id_cpf" id="id_cpf" placeholder="somente números" required><br>
+                <label for="nome_completo" class="required">Nome Completo:</label><br>
+                <input type="text" id="nome_completo" name="nome_completo" placeholder="Ex: Maria da Costa Silva" required><br>
+                <label for="estado_civil">Estado Civil</label><br>
+                <select name="estado_civil" id="estado_civil">
+                    <option value="#" selected>Selecione</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="separado">Separado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viúvo">Viúvo(a)</option>
+                    </select><br>
+            </td>
+            <td>
+                <label for="id_rg" class="required">RG</label><br>
+                <input type="number" name="id_rg" id="id_rg" placeholder="somente números" pattern="[0-9]{11}" required><br>
+                <label for="data_nascimento" class="required">Data de Nascimento</label><br>
+                <input type="date" name="data_nascimento" id="data_nascimento" max="2021-08-29" required><br>
+                <label for="genero">Gênero</label><br>
+                <select name="genero" id="genero">
+                    <option value="#" selected>Selecione</option>
+                    <option value="fem">Feminino</option>
+                    <option value="masc">Masculino</option>
+                    <option value="nb">Não-binário</option>
+                    <option value="outro">Outro</option>
+                    <option value="nd">Não declarar</option>
+                    </select><br>
+            </td>
+        </table>
+        <h2>Endereço</h2>
+        <table id="endereco">
+            <td>
+                <label for="cep" class="required">CEP</label><br>
+                <input type="number" name="cep" id="cep" placeholder="somente números" required><br>
+                <label for="end" class="required">Logradouro</label><br>
+                <input type="text" name="end" id="end" required><br>
+                <label for="bairro" class="required">Bairro</label><br>
+                <input type="text" name="bairro" id="bairro" required><br>
+                <label for="tel">Telefone Fixo</label><br>
+                <input type="tel" name="telefone_f" id="telefone_f"><br>    
+            </td>
+        <td>
+                <label for="uf">Estado</label> <br>
+                <input type="text" name="uf" id="uf"> <br>
+                <label for="num" class="required">N&deg;</label><br>
+                <input type="text" name="num" id="num" required><br>
+                <label for="cidade" class="required">Cidade</label><br>
+                <input type="text" name="cidade" id="cidade" required> <br>
+                <label for="celular" class="required">Celular</label><br>
+                <input type="tel" name="celular" id="celular"required><br>
+        </td>
+        </table>
+        <h2>Informações profissionais</h2>
+        <table id="contato">
+            <td>
+                <label for="email" class="required">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="cargo">Cargo Pretendido</label><br>
+                <input type="text" name="cargo" id="cargo" ><br>
+                <label for="habilitacao">Habilitação</label><br>
+                <select name="habilitacao" id="habilitacao">
+                    <option value="#" selected>Selecione</option>
+                    <option value="">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="nao">Não possui</option>
+                </select><br>
+            </td>
+            <td>
+                <label for="escolaridade">Escolaridade</label><br>
+                <select name="escolaridade" id="escolaridade">
+                    <option value="#" selected>Selecione</option>
+                    <option value="fund_i">Fundamental Incompleto</option>
+                    <option value="fund_c">Fundamental Completo</option>
+                    <option value="med_i">Médio Incompleto</option>
+                    <option value="med_c">Médio Completo</option>
+                    <option value="sup_i">Superior Incompleto</option>
+                    <option value="sup_c">Superior Completo</option>
+                    <option value="pg_i">Pós-Graduação Incompleto</option>
+                    <option value="pg_c">Pós-Graduação Completo</option>
+                    <option value="mes_i">Mestrado Incompleto</option>
+                    <option value="mes_c">Mestrado Completo</option>
+                    <option value="dou_i">Doutorado Incompleto</option>
+                    <option value="dou_c">Doutorado Completo</option>
+                </select><br>
+                <label for="profissao" class="required">Profissão</label><br>
+                <input type="text" name="profissao" id="profissao" required><br>
+                <label for="veiculo">Possui Veículo Próprio</label><br>
+                <select name="veiculo" id="veiculo">
+                    <option value="#" selected>Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+            </td>
+        </table>
+        <br><input type="button" id="enviar" value="Enviar">
+        <br>
+    </form>
+    </div>
+    <footer>
+        Isabela Afonso Collares &copy; 2021 <br>
+        Imagem de Free-Photos por Pixabay 
+    </footer>
+</body>
+<script src="./script.js" type="module" defer></script>
+</html>

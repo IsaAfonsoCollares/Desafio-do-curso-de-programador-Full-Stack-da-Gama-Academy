@@ -1,0 +1,82 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API Desafio Gama",
+      "description": "essa é a api do Desafio Gama",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:2903",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: cpf, rg, nome, data_nascimento, estado_civil, genero, cep, uf, logradouro, num, bairro, cidade, telefone_f, celular, email, escolaridade, cargo_pretendido, profissao, habilitacao, veiculo ",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "cpf": {"type": "Number"},
+                    "rg": {"type":"Number"},
+                    "nome": {"type": "String"},
+                    "data_nascimento": {"type": "Date"},
+                    "estado_civil": {"type": "String"},
+                    "genero": {"type": "String"},
+                    "cep": {"type": "Number"},
+                    "uf": {"type": "String"},
+                    "logradouro": {"type": "String"},
+                    "num": {"type":"Number"},
+                    "bairro": {"type": "String"},
+                    "cidade": {"type": "String"},
+                    "telefone_f": {"type":"Number"},
+                    "celular": {"type":"Number"},
+                    "email": {"type": "String"},
+                    "escolaridade": {"type": "String"},
+                    "cargo_pretendido": {"type": "String"},
+                    "profissao": {"type": "String"},
+                    "habilitacao": {"type": "String"},
+                    "veiculo": {"type": "String"}
+                  }
+                },
+                "examples": {
+                  "teste": {
+                    "value": {
+                        "cpf": 11111111111,
+                        "rg": 141569871,
+                        "nome": "John Snow",
+                        "data_nascimento": "1998-02-09",
+                        "estado_civil": "solteiro",
+                        "genero": "masculino",
+                        "cep": 12356448 ,
+                        "uf": "String",
+                        "logradouro": "Avenida Vazia",
+                        "num": 235,
+                        "bairro": "Javascript",
+                        "cidade": "Vs code",
+                        "telefone_f": 26547981,
+                        "celular": 984756123,
+                        "email": "email@test.com",
+                        "escolaridade": "sup_i",
+                        "cargo_pretendido": "Estagiario",
+                        "profissao": "Estudante",
+                        "habilitacao": "A",
+                        "veiculo": "sim"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
