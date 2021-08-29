@@ -5,6 +5,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDocs = require('./swagger.json');
 const routes = require('./routes');
 const app = express();
+const cors = require('cors');
 //configurando o mongoose
 mongoose.Promise=global.Promise;
 mongoose.connect("mongodb+srv://isa:01062926@gama.jju3d.mongodb.net/gama?retryWrites=true&w=majority", { 

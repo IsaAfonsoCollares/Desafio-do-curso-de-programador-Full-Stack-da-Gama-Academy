@@ -36,10 +36,8 @@ const user = await fetch('https://desafio-gama-iac.herokuapp.com/register', {
     });
       if (user.status == 200) {
           console.log(Form())
-          alert('deu certo');
           window.open('/extras/valido.html')
       } if (user.status == 500) {
-          alert ('já temos seus dados');
           window.open('/extras/duplicado.html')
       }
     
