@@ -29,20 +29,20 @@ const Form = () => {
 } 
 
 const createCandidate = async (candidato) => {
-  
-const user = await fetch('https://desafio-gama-iac.herokuapp.com/register', {
-    method: "POST",
-    headers: {
-        'Accept': 'application/json',
-        'Content-Type':'application/json'
-        },
-    body: JSON.stringify(Form())
-    });
-      if (user.status == 200) {
+        const user = await fetch('https://desafio-gama-iac.herokuapp.com/register', {
+            method: "POST",
+            headers: {
+                    'Accept': 'application/json',
+                    'Content-Type':'application/json'
+            },
+        body: JSON.stringify(Form())
+        });
+        if (user.status == 200) {
           console.log(Form())
           window.open('/extras/valido.html')
-      } if (user.status == 500) {
+         } 
+        if (user.status == 500) {
           window.open('/extras/duplicado.html')
-      }
-   return false; 
+        }
 }
+document.getElementById('enviar').addEventListener('click', createCandidate);
