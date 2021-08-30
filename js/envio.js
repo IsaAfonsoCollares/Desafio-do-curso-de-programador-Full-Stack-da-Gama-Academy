@@ -24,8 +24,6 @@ const Form = () => {
     };
     
     console.log(form);
-    return form
-    
 } 
 
 const createCandidate = async (candidato) => {
