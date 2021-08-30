@@ -46,4 +46,3 @@ const user = await fetch('https://desafio-gama-iac.herokuapp.com/register', {
       }
    return false; 
 }
-document.getElementById('enviar').addEventListener('click', createCandidate);
