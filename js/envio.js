@@ -43,4 +43,33 @@ const createCandidate = async (candidato) => {
           window.open('/extras/duplicado.html')
         }
 }
-document.getElementById('enviar').addEventListener('click', createCandidate);
+function checkForm() {
+  let cpf: document.getElementById('id_cpf').value;
+  let rg: document.getElementById('id_rg').value;
+  let nome: document.getElementById('nome_completo').value;
+  let data_nascimento: document.getElementById('data_nascimento').value;
+  let estado_civil: document.getElementById('estado_civil').value;
+  let genero: document.getElementById('genero').value;
+  let cep: document.getElementById('cep').value;
+  let uf: document.getElementById('uf').value;
+  let logradouro: document.getElementById('end').value;
+  let num: document.getElementById('num').value;
+  let bairro: document.getElementById('bairro').value;
+  let cidade: document.getElementById('cidade').value;
+  let telefone_f: document.getElementById('telefone_f').value;
+  letcelular: document.getElementById('celular').value;
+  let email: document.getElementById('email').value;
+  let escolaridade: document.getElementById('escolaridade').value;
+  let cargo_pretendido: document.getElementById('cargo').value;
+  let profissao: document.getElementById('profissao').value;
+  let habilitacao: document.getElementById('habilitacao').value;
+  let veiculo: document.getElementById('veiculo').value;
+
+  if (nome == '' || cpf == '' || data_nascimento == '' || cep == '' || logradouro == '' || num == '' || bairro == '' || cidade == ''
+  || celular == '' || email == '' || profissao == '' || cargo == ''){
+      document.getElementById('errorSubmit').style.display = 'block'; 
+  } else {
+      createCandidate();
+      alert('verificando cadastro...');
+  }
+}
